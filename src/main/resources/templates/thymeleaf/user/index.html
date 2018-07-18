@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>炎炎夏日</title>
+</head>
+<body>
+<table style="border: coral" border="1" width="100%">
+    <tr>
+        <th>姓名</th>
+        <th>年龄</th>
+        <th>年龄</th>
+        <th>生日</th>
+        <th>生日</th>
+        <th>生日</th>
+        <th>生日</th>
+        <th>生日</th>
+        <th>生日</th>
+        <th>生日</th>
+        <th>生日</th>
+        <th>生日</th>
+        <th>生日</th>
+        <th>生日</th>
+        <th>生日</th>
+        <th>生日</th>
+        <th>生日</th>
+        <th>生日</th>
+    </tr>
+    <tr th:each="person:${userinfoList}">
+        <td th:text="${person.userid}"></td>
+        <td th:text="${person.errcode}"></td>
+        <td th:text="${person.errmsg}"></td>
+        <td th:text="${person.name}"></td>
+        <td th:text="${person.department}"></td>
+        <td th:text="${person.position}"></td>
+        <td th:text="${person.mobile}"></td>
+        <td th:text="${person.gender}"></td>
+        <td th:text="${person.email}"></td>
+        <td th:text="${person.avatar}"></td>
+        <td th:text="${person.status}"></td>
+        <td th:text="${person.isleader}"></td>
+        <td th:text="${person.extattr}"></td>
+        <td th:text="${person.englishName}"></td>
+        <td th:text="${person.telephone}"></td>
+        <td th:text="${person.enable}"></td>
+        <td th:text="${person.hideMobile}"></td>
+        <td th:text="${person.orders}"></td>
+    </tr>
+</table>
+</body>
+</html>
